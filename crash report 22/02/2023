@@ -1,0 +1,42 @@
+--- Minecraft Crash Report ----
+// Daisy, daisy...
+
+Time: 2023-02-22 19:19:11 GMT
+Description: Rendering item
+
+java.lang.OutOfMemoryError: Java heap space
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Item being rendered --
+  Item Type: slimeknights.tconstruct.tools.tools.Pickaxe@4d264602
+  Registry Name: tconstruct:pickaxe
+  Item Aux: 1887
+  Item NBT: {ench:[{lvl:3s,id:35s}],StatsOriginal:{AttackSpeedMultiplier:1.0f,MiningSpeed:2.8275f,FreeModifiers:3,Durability:2860,HarvestLevel:0,Attack:1.35f},Stats:{AttackSpeedMultiplier:1.0f,MiningSpeed:10.234812f,FreeModifiers:0,Durability:4790,HarvestLevel:5,Attack:2.35f,Broken:0b},Special:{Categories:["aoe","harvest","tool"],RepairCount:100},TinkerData:{UsedModifiers:4,Materials:["pink_slime","pink_slime","pink_slime"],Modifiers:["diamond","emerald","fortifyskyfather","haste","creative","luck"]},Modifiers:[{identifier:"slimey_pink",color:-31571,level:1},{identifier:"diamond",color:9237730},{identifier:"emerald",color:4322180},{identifier:"fortifyskyfather",color:-13355980},{identifier:"haste",current:50,color:9502720,level:1,max:50,extraInfo:"49 / 50"},{identifier:"creative",color:0,level:1},{identifier:"luck",current:360,color:2970082,level:3,max:360,modifierUsed:1b,extraInfo:"359 / 360"}],Traits:["slimey_pink","luck"]}
+  Item Foil: false
+
+-- Item being rendered --
+  Item Type: slimeknights.tconstruct.tools.tools.Pickaxe@4d264602
+  Item Aux: 1887
+  Item NBT: {ench:[{lvl:3s,id:35s}],StatsOriginal:{AttackSpeedMultiplier:1.0f,MiningSpeed:2.8275f,FreeModifiers:3,Durability:2860,HarvestLevel:0,Attack:1.35f},Stats:{AttackSpeedMultiplier:1.0f,MiningSpeed:10.234812f,FreeModifiers:0,Durability:4790,HarvestLevel:5,Attack:2.35f,Broken:0b},Special:{Categories:["aoe","harvest","tool"],RepairCount:100},TinkerData:{UsedModifiers:4,Materials:["pink_slime","pink_slime","pink_slime"],Modifiers:["diamond","emerald","fortifyskyfather","haste","creative","luck"]},Modifiers:[{identifier:"slimey_pink",color:-31571,level:1},{identifier:"diamond",color:9237730},{identifier:"emerald",color:4322180},{identifier:"fortifyskyfather",color:-13355980},{identifier:"haste",current:50,color:9502720,level:1,max:50,extraInfo:"49 / 50"},{identifier:"creative",color:0,level:1},{identifier:"luck",current:360,color:2970082,level:3,max:360,modifierUsed:1b,extraInfo:"359 / 360"}],Traits:["slimey_pink","luck"]}
+  Item Foil: false
+
+-- Affected level --
+  Level name: MpServer
+  All players: 1 total; [GCEntityClientPlayerMP['ReservedSkillz'/1023496, l='MpServer', x=246.42, y=83.00, z=2296.37]]
+  Chunk stats: MultiplayerChunkCache: 81, 81
+  Level seed: 0
+  Level generator: ID 00 - default, ver 1. Features enabled: false
+  Level generator options: 
+  Level spawn location: World: (255,79,255), Chunk: (at 15,4,15 in 15,15; contains blocks 240,0,240 to 255,255,255), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,0,0 to 511,255,511)
+  Level time: 808570277 game time, 783607585 day time
+  Level dimension: 0
+  Level storage version: 0x00000 - Unknown?
+  Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+  Level game mode: Game mode: survival (ID 0). Hardcore: false. Cheats: false
+  Forced entities: 47 total; [EntityItem['item.tile.blockCoal'/1026316, l='MpServer', x=229.50, y=93.00, z=2259.50], EntityItem['item.tile.natura.overworld_sapling2.hopseed'/973832, l='MpServer', x=228.88, y=83.00, z=2272.20], EntityXPOrbBig['entity.xp_orb_big.name'/970632, l='MpServer', x=263.76, y=89.00, z=2284.89], EntityItem['item.tile.divine_sapling'/928390, l='MpServer', x=227.56, y=83.00, z=2255.88], EntityXPOrbBig['entity.xp_orb_big.name'/969350, l='MpServer', x=255.96, y=89.00, z=2297.25], EntitySkeletonHorse['Skeleton Horse'/1296, l='MpServer', x=201.59, y=65.00, z=2263.32], EntitySkeletonHorse['Skeleton Horse'/1298, l='MpServer', x=205.02, y=64.00, z=2267.09], EntityXPOrbBig['entity.xp_orb_big.name'/991767, l='MpServer', x=264.75, y=83.00, z=2291.79], EntityItem['item.item.item_material.powder_infinity'/1004437, l='MpServer', x=259.46, y=2.00, z=2265.07], EntityItem['item.item.item_material.powder_infinity'/976529, l='MpServer', x=261.07, y=2.00, z=2258.13], EntityItem['item.tile.divine_sapling'/1316, l='MpServer', x=230.09, y=83.00, z=2255.88], VengeanceSpirit['Vengeance Spirit'/992161, l='MpServer', x=264.25, y=89.94, z=2292.59], EntityItem['item.tile.natura.overworld_sapling2.hopseed'/976697, l='MpServer', x=228.30, y=83.00, z=2262.39], EntityBat['Bat'/905786, l='MpServer', x=262.90, y=60.10, z=2289.63], EntityItem['item.tile.natura.overworld_sapling2.hopseed'/1026127, l='MpServer', x=223.22, y=63.00, z=2268.58], EntityItem['item.tile.divine_sapling'/975048, l='MpServer', x=229.66, y=83.00, z=2262.13], EntityXPOrbBig['entity.xp_orb_big.name'/973766, l='MpServer', x=260.09, y=89.00, z=2285.24], EntityXPOrbBig['entity.xp_orb_big.name'/992582, l='MpServer', x=261.25, y=89.00, z=2297.08], EntityItem['item.item.item_material.powder_infinity'/935006, l='MpServer', x=258.74, y=2.00, z=2269.70], EntityXPOrbBig['entity.xp_orb_big.name'/974812, l='MpServer', x=267.27, y=89.00, z=2300.75], VengeanceSpirit['Vengeance Spirit'/992475, l='MpServer', x=263.76, y=89.00, z=2292.62], EntityXPOrbBig['entity.xp_orb_big.name'/1026267, l='MpServer', x=263.08, y=89.00, z=2294.27], EntityBat['Bat'/956631, l='MpServer', x=222.66, y=34.99, z=2302.37], EntityItem['item.tile.natura.overworld_sapling2.hopseed'/1026132, l='MpServer', x=223.04, y=83.00, z=2274.27], GCEntityClientPlayerMP['ReservedSkillz'/1023496, l='MpServer', x=246.42, y=83.00, z=2296.37], EntityItem['item.tile.natura.overworld_sapling2.hopseed'/1026131, l='MpServer', x=221.01, y=62.00, z=2272.68], VengeanceSpirit['Vengeance Spirit'/993234, l='MpServer', x=263.76, y=89.00, z=2292.30], EntityItem['item.tile.natura.overworld_sapling2.hopseed'/1026130, l='MpServer', x=222.85, y=63.00, z=2272.68], EntityItem['item.tile.natura.overworld_sapling2.hopseed'/1026129, l='MpServer', x=222.85, y=62.00, z=2269.08], EntityItem['item.tile.natura.overworld_sapling2.hopseed'/1026128, l='MpServer', x=221.98, y=62.00, z=2265.92], EntityChicken['Chicken'/777067, l='MpServer', x=209.76, y=63.00, z=2299.52], EntityToad['Toad'/777071, l='MpServer', x=233.50, y=63.00, z=2331.86], EntityFrog['Frog'/777070, l='MpServer', x=213.52, y=62.50, z=2339.32], EntityItem['item.item.tconstruct.edible.slimeball_purple'/993002, l='MpServer', x=227.99, y=83.00, z=2262.87], EntityCow['Cow'/777069, l='MpServer', x=222.61, y=63.00, z=2319.21], EntityCow['Cow'/777068, l='MpServer', x=214.66, y=64.00, z=2297.21], EntitySkeletonHorse['Skeleton Horse'/1022053, l='MpServer', x=262.90, y=67.00, z=2317.43], EntitySkeletonHorse['Skeleton Horse'/777056, l='MpServer', x=205.44, y=64.00, z=2253.57], EntityWitch['Witch'/992867, l='MpServer', x=264.73, y=89.00, z=2297.30], EntityXPOrbBig['entity.xp_orb_big.name'/989306, l='MpServer', x=268.75, y=89.00, z=2292.25], EntityItem['item.item.item_material.powder_infinity'/980601, l='MpServer', x=253.54, y=2.00, z=2263.60], EntityItem['item.tile.tconstruct.slime_sapling.purple'/993013, l='MpServer', x=227.13, y=83.00, z=2264.93], EntitySheep['Sheep'/777073, l='MpServer', x=231.96, y=63.00, z=2330.90], EntityParrot['Parrot'/777072, l='MpServer', x=232.75, y=63.00, z=2330.25], EntityItem['item.tile.blockCoal'/911216, l='MpServer', x=229.50, y=93.00, z=2259.50], EntityXPOrbBig['entity.xp_orb_big.name'/978929, l='MpServer', x=265.16, y=83.00, z=2294.44], EntitySkeletonHorse['Skeleton Horse'/777076, l='MpServer', x=273.04, y=64.00, z=2329.34]]
+  Retry entities: 0 total; []
+  Server brand: ungeecord (git:BungeeCord-Bootstrap:1.18-R0.1-SNAPSHOT:c53fb06:unk
+  Server type: Non-integrated multiplayer server
